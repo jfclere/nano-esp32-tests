@@ -20,3 +20,6 @@ tests for arduino nano esp32
             return 0;
         }
 ```
+the sp_2048_norm_36() and co are in ./sp_c32.c (how to use them???)
+
+
