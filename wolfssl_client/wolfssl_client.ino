@@ -574,8 +574,8 @@ int setup_certificates(void) {
     show_memory();
 
     /* Use built-in validation, No verification callback function: */
-    // wolfSSL_CTX_set_verify(sslctx, SSL_VERIFY_PEER, 0);
-    wolfSSL_CTX_set_verify(sslctx, SSL_VERIFY_NONE, 0);
+    wolfSSL_CTX_set_verify(sslctx, SSL_VERIFY_PEER, 0);
+    // wolfSSL_CTX_set_verify(sslctx, SSL_VERIFY_NONE, 0);
 
     /* Certificate 0/
     Serial.println("Initializing certificates...");

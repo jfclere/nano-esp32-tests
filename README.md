@@ -22,4 +22,9 @@ tests for arduino nano esp32
 ```
 the sp_2048_norm_36() and co are in ./sp_c32.c (how to use them???)
 
+#define FP_MAX_BITS 8192 in ${HOME}/Arduino/libraries/wolfssl/src/wolfssl/wolfcrypt/settings.h helps
 
+#define DEBUG_WOLFSSL there too is nice to debug...
+note:
+WOLFSSL_MSG_EX("fp_exptmod_nct failed err = %d", FP_MAX_BITS);
+helps to debug.
