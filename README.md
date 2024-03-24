@@ -28,3 +28,9 @@ the sp_2048_norm_36() and co are in ./sp_c32.c (how to use them???)
 note:
 WOLFSSL_MSG_EX("fp_exptmod_nct failed err = %d", FP_MAX_BITS);
 helps to debug.
+
+To get TLS-1.3 put in settings.h:
+#define WOLFSSL_TLS13
+#define HAVE_FFDHE_4096
+#define WC_RSA_PSS
+#define HAVE_HKDF
